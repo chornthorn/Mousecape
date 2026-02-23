@@ -1,11 +1,12 @@
 // MCGeneralPreferencesController.swift
 // Mousecape
 //
-// Swift replacement for MCGeneralPreferencesController.h / .m
+// Legacy preferences controller — superseded by SettingsView.swift (SwiftUI).
+// Kept for reference; no longer used as the active preferences UI.
 
 import AppKit
 
-@objc(MCGeneralPreferencesController) class MCGeneralPreferencesController: NSViewController, MASPreferencesViewController {
+@objc(MCGeneralPreferencesController) class MCGeneralPreferencesController: NSViewController {
 
     // MARK: - cursorScale backed by CGS
 
@@ -27,17 +28,5 @@ import AppKit
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-    }
-
-    // MARK: - MASPreferencesViewController
-
-    var identifier: String { return "GeneralPreferences" }
-
-    var toolbarItemImage: NSImage? {
-        return NSImage(named: NSImage.preferencesGeneralName)
-    }
-
-    var toolbarItemLabel: String {
-        return NSLocalizedString("General", comment: "Toolbar item name for the General preference pane")
     }
 }

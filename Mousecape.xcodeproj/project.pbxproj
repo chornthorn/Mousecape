@@ -86,6 +86,15 @@
 		28EC0039614A46FF84454D75 /* MCLibraryWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012789D650954FA7A28423B1 /* MCLibraryWindowController.swift */; };
 		1C474EB3C1BB42D38EF7462E /* MCGeneralPreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08E9517A6E41CB954B069B /* MCGeneralPreferencesController.swift */; };
 		D91B6564F8614E718F81AD33 /* MCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145F7F0380A4979B867183E /* MCAppDelegate.swift */; };
+		000000006C886490EF63E361 /* MousecapeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000001C0CFE49C99151A4 /* MousecapeApp.swift */; };
+		000000005E39228C5B9A58D4 /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000003C262EED8E6F9AAE /* LibraryStore.swift */; };
+		0000000048F621FF5D3D6E90 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000006B002E70A4BEDC24 /* LibraryView.swift */; };
+		00000000CC628FDADB5EFC87 /* CapeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000002D56B8F18F6B5EE5 /* CapeRowView.swift */; };
+		0000000022E061A8106CF210 /* CursorThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000952ECC909A4232 /* CursorThumbnailView.swift */; };
+		000000001F0F3AF33AC1A9F1 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000065494E158B8BAD60 /* EditView.swift */; };
+		00000000B656EB6AD5B9EC27 /* CapeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005580C51B9BE41EC /* CapeEditorView.swift */; };
+		00000000D0FBA36DF33C84A9 /* CursorEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000940C93C3CC319F39 /* CursorEditorView.swift */; };
+		00000000BB564E2E70657A19 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000005FFB1F684555D157 /* SettingsView.swift */; };
 /* End Swift Build Files */
 /* End PBXBuildFile section */
 
@@ -395,6 +404,15 @@
 		8409733D6D064A27BD5D0116 /* MCLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCLibraryViewController.swift"; sourceTree = "<group>"; };
 		012789D650954FA7A28423B1 /* MCLibraryWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCLibraryWindowController.swift"; sourceTree = "<group>"; };
 		FB08E9517A6E41CB954B069B /* MCGeneralPreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCGeneralPreferencesController.swift"; sourceTree = "<group>"; };
+		000000001C0CFE49C99151A4 /* MousecapeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MousecapeApp.swift"; sourceTree = "<group>"; };
+		000000003C262EED8E6F9AAE /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LibraryStore.swift"; sourceTree = "<group>"; };
+		000000006B002E70A4BEDC24 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LibraryView.swift"; sourceTree = "<group>"; };
+		000000002D56B8F18F6B5EE5 /* CapeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CapeRowView.swift"; sourceTree = "<group>"; };
+		0000000000952ECC909A4232 /* CursorThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CursorThumbnailView.swift"; sourceTree = "<group>"; };
+		0000000065494E158B8BAD60 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView.swift"; sourceTree = "<group>"; };
+		0000000005580C51B9BE41EC /* CapeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CapeEditorView.swift"; sourceTree = "<group>"; };
+		00000000940C93C3CC319F39 /* CursorEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CursorEditorView.swift"; sourceTree = "<group>"; };
+		000000005FFB1F684555D157 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
 		E145F7F0380A4979B867183E /* MCAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCAppDelegate.swift"; sourceTree = "<group>"; };
 /* End Swift File References */
 /* End PBXFileReference section */
@@ -1022,14 +1040,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA57339724954AB000103FCF /* RBLClipView.m in Sources */,
-				FA57339824954AB000103FCF /* NSColor+RBLCGColorAdditions.m in Sources */,
-				FA5107E818A823BD00917185 /* MASPreferencesWindowController.m in Sources */,
-				FAAEF8F4189EB32700145DF8 /* BTRClipView.m in Sources */,
-				FAAEF8F5189EB32700145DF8 /* BTRScrollView.m in Sources */,
-				FA57339924954AB000103FCF /* RBLScrollView.m in Sources */,
-				FADBC15118CE51C000B9510F /* DTScrollView.m in Sources */,
-			
+								
 				D63CC81F9E8A4871A7B74DDD /* MCDefs.swift in Sources */,
 				F8778744039A4E168A2225D8 /* MCPrefs.swift in Sources */,
 				B1301B1F0A19488BA418DAD2 /* NSBitmapImageRep+ColorSpace.swift in Sources */,
@@ -1056,6 +1067,15 @@
 				B35358CA87844FEC97EF12D8 /* MCLibraryViewController.swift in Sources */,
 				28EC0039614A46FF84454D75 /* MCLibraryWindowController.swift in Sources */,
 				1C474EB3C1BB42D38EF7462E /* MCGeneralPreferencesController.swift in Sources */,
+				000000006C886490EF63E361 /* MousecapeApp.swift in Sources */,
+				000000005E39228C5B9A58D4 /* LibraryStore.swift in Sources */,
+				0000000048F621FF5D3D6E90 /* LibraryView.swift in Sources */,
+				00000000CC628FDADB5EFC87 /* CapeRowView.swift in Sources */,
+				0000000022E061A8106CF210 /* CursorThumbnailView.swift in Sources */,
+				000000001F0F3AF33AC1A9F1 /* EditView.swift in Sources */,
+				00000000B656EB6AD5B9EC27 /* CapeEditorView.swift in Sources */,
+				00000000D0FBA36DF33C84A9 /* CursorEditorView.swift in Sources */,
+				00000000BB564E2E70657A19 /* SettingsView.swift in Sources */,
 				D91B6564F8614E718F81AD33 /* MCAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1064,9 +1084,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC69FD6189D609B00BC829D /* GBSettings.m in Sources */,
-				FAC69FD5189D609B00BC829D /* GBOptionsHelper.m in Sources */,
-				FAC69FD4189D609B00BC829D /* GBCommandLineParser.m in Sources */,
 			
 				AB215FFEBD294A0A988A5A47 /* MCDefs.swift in Sources */,
 				842EE1EFA3BF485D818C934C /* MCPrefs.swift in Sources */,
@@ -1211,7 +1228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -1262,7 +1279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				SDKROOT = macosx;
 			};
 			name = Release;

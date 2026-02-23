@@ -6,7 +6,3 @@
 
 // Private cursor headers
 #import "../mousecloak/NSCursor_Private.h"
-
-// MASPreferences (ObjC vendor)
-#import "external/MASPreferences/MASPreferencesWindowController.h"
-#import "external/MASPreferences/MASPreferencesViewController.h"
