@@ -211,7 +211,7 @@ func capeWithIdentifier(_ identifier: String) -> [String: Any]? {
                 UnsafeMutablePointer(mutating: cStr),
                 &size, &hotSpot, &frameCount, &frameDuration, &representations)
         } else {
-            let cursorID = Int32((identifier as NSString).pathExtension) ?? 0
+            let cursorID = Int32(Int((identifier as NSString).pathExtension) ?? 0)
             error = CoreCursorCopyImages(
                 CGSMainConnectionID(),
                 cursorID, &representations,

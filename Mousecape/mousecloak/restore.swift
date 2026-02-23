@@ -7,6 +7,7 @@ import Foundation
 
 func restoreStringForIdentifier(_ identifier: String) -> String {
     let prefix = "com.alexzielenski.mousecape."
+    guard identifier.hasPrefix(prefix) else { return identifier }
     return String(identifier.dropFirst(prefix.count))
 }
 

@@ -90,17 +90,17 @@ let MCLibraryDidSaveNotificationName  = "MCLibraryDidSave"
         weak var weakSelf = self
 
         let ob1 = center.addObserver(
-            forName: NSNotification.Name(rawValue: NSUndoManagerDidCloseUndoGroupNotification),
+            forName: NSUndoManager.didCloseUndoGroupNotification,
             object: undoManager, queue: nil) { _ in
             weakSelf?.updateChangeCount(.changeDone)
         }
         let ob2 = center.addObserver(
-            forName: NSNotification.Name(rawValue: NSUndoManagerDidUndoChangeNotification),
+            forName: NSUndoManager.didUndoChangeNotification,
             object: undoManager, queue: nil) { _ in
             weakSelf?.updateChangeCount(.changeUndone)
         }
         let ob3 = center.addObserver(
-            forName: NSNotification.Name(rawValue: NSUndoManagerDidRedoChangeNotification),
+            forName: NSUndoManager.didRedoChangeNotification,
             object: undoManager, queue: nil) { _ in
             weakSelf?.updateChangeCount(.changeRedone)
         }
