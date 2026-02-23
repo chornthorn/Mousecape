@@ -1,0 +1,4 @@
+module GBCli {
+    umbrella "/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli"
+    export *
+}

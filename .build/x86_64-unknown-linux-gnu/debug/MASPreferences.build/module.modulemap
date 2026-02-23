@@ -1,0 +1,4 @@
+module MASPreferences {
+    umbrella "/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences"
+    export *
+}

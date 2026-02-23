@@ -1,0 +1,304 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "BTRKit-x86_64-unknown-linux-gnu-debug.module": ["<BTRKit-x86_64-unknown-linux-gnu-debug.module>"]
+  "DTScrollView-x86_64-unknown-linux-gnu-debug.module": ["<DTScrollView-x86_64-unknown-linux-gnu-debug.module>"]
+  "GBCli-x86_64-unknown-linux-gnu-debug.module": ["<GBCli-x86_64-unknown-linux-gnu-debug.module>"]
+  "MASPreferences-x86_64-unknown-linux-gnu-debug.module": ["<MASPreferences-x86_64-unknown-linux-gnu-debug.module>"]
+  "MousecapeApp-x86_64-unknown-linux-gnu-debug.module": ["<MousecapeApp-x86_64-unknown-linux-gnu-debug.module>"]
+  "MousecloakCore-x86_64-unknown-linux-gnu-debug.module": ["<MousecloakCore-x86_64-unknown-linux-gnu-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "Rebel-x86_64-unknown-linux-gnu-debug.module": ["<Rebel-x86_64-unknown-linux-gnu-debug.module>"]
+  "main": ["<BTRKit-x86_64-unknown-linux-gnu-debug.module>","<DTScrollView-x86_64-unknown-linux-gnu-debug.module>","<GBCli-x86_64-unknown-linux-gnu-debug.module>","<MASPreferences-x86_64-unknown-linux-gnu-debug.module>","<MousecapeApp-x86_64-unknown-linux-gnu-debug.module>","<MousecloakCore-x86_64-unknown-linux-gnu-debug.module>","<Rebel-x86_64-unknown-linux-gnu-debug.module>","<mousecloak-x86_64-unknown-linux-gnu-debug.exe>","<mousecloak-x86_64-unknown-linux-gnu-debug.module>","<mousecloakHelper-x86_64-unknown-linux-gnu-debug.exe>","<mousecloakHelper-x86_64-unknown-linux-gnu-debug.module>"]
+  "mousecloak-x86_64-unknown-linux-gnu-debug.exe": ["<mousecloak-x86_64-unknown-linux-gnu-debug.exe>"]
+  "mousecloak-x86_64-unknown-linux-gnu-debug.module": ["<mousecloak-x86_64-unknown-linux-gnu-debug.module>"]
+  "mousecloakHelper-x86_64-unknown-linux-gnu-debug.exe": ["<mousecloakHelper-x86_64-unknown-linux-gnu-debug.exe>"]
+  "mousecloakHelper-x86_64-unknown-linux-gnu-debug.module": ["<mousecloakHelper-x86_64-unknown-linux-gnu-debug.module>"]
+  "test": ["<BTRKit-x86_64-unknown-linux-gnu-debug.module>","<DTScrollView-x86_64-unknown-linux-gnu-debug.module>","<GBCli-x86_64-unknown-linux-gnu-debug.module>","<MASPreferences-x86_64-unknown-linux-gnu-debug.module>","<MousecapeApp-x86_64-unknown-linux-gnu-debug.module>","<MousecloakCore-x86_64-unknown-linux-gnu-debug.module>","<Rebel-x86_64-unknown-linux-gnu-debug.module>","<mousecloak-x86_64-unknown-linux-gnu-debug.exe>","<mousecloak-x86_64-unknown-linux-gnu-debug.module>","<mousecloakHelper-x86_64-unknown-linux-gnu-debug.exe>","<mousecloakHelper-x86_64-unknown-linux-gnu-debug.module>"]
+default: "main"
+nodes:
+  "/home/runner/work/Mousecape/Mousecape/Mousecape/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/home/runner/work/Mousecape/Mousecape/mousecloakHelper/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit/BTRClipView.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.o"]
+    description: "Compiling BTRKit BTRClipView.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.d","-c","/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit/BTRClipView.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit/BTRScrollView.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.o"]
+    description: "Compiling BTRKit BTRScrollView.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.d","-c","/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit/BTRScrollView.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView/DTScrollView.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.o"]
+    description: "Compiling DTScrollView DTScrollView.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.d","-c","/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView/DTScrollView.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/GBCommandLineParser.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o"]
+    description: "Compiling GBCli GBCommandLineParser.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli","-fobjc-arc","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.d","-c","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/GBCommandLineParser.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/GBOptionsHelper.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o"]
+    description: "Compiling GBCli GBOptionsHelper.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli","-fobjc-arc","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.d","-c","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/GBOptionsHelper.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/GBSettings.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o"]
+    description: "Compiling GBCli GBSettings.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli","-fobjc-arc","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.d","-c","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/GBSettings.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences/MASPreferencesWindowController.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.o"]
+    description: "Compiling MASPreferences MASPreferencesWindowController.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.d","-c","/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences/MASPreferencesWindowController.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MousecapeApp.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecapeApp.swiftmodule"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MousecapeApp.swiftmodule.o"]
+    description: "Wrapping AST for MousecapeApp for debugging"
+    args: ["/usr/share/swift/usr/bin/swiftc","-modulewrap","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecapeApp.swiftmodule","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MousecapeApp.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/runner/work/Mousecape/Mousecape/Mousecape/MCAppDelegate.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSFileManager+DirectoryLocations.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSOrderedSet+AZSortedInsert.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditCapeController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditDetailController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditListController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditWindowController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryViewController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryWindowController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/Preferences/MCGeneralPreferencesController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursor.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursorLibrary.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/subclasses/MCFormatters.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapeCellView.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapePreviewItem.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCSpriteLayer.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MMAnimatingImageView.swift"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources"]
+    description: "Write auxiliary file /home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o"]
+    description: "Wrapping AST for MousecloakCore for debugging"
+    args: ["/usr/share/swift/usr/bin/swiftc","-modulewrap","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/runner/work/Mousecape/Mousecape/mousecloak/MCDefs.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/MCPrefs.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/NSBitmapImageRep+ColorSpace.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/apply.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/backup.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/create.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/listen.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/restore.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/scale.swift"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources"]
+    description: "Write auxiliary file /home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/NSColor+RBLCGColorAdditions.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.o"]
+    description: "Compiling Rebel NSColor+RBLCGColorAdditions.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel","-fno-objc-arc","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.d","-c","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/NSColor+RBLCGColorAdditions.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/RBLClipView.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.o"]
+    description: "Compiling Rebel RBLClipView.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel","-fno-objc-arc","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.d","-c","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/RBLClipView.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.o":
+    tool: clang
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/RBLScrollView.m"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.o"]
+    description: "Compiling Rebel RBLScrollView.m"
+    args: ["/usr/share/swift/usr/bin/clang","-target","x86_64-unknown-linux-gnu","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-I","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel","-fno-objc-arc","-fPIC","-g","-fno-omit-frame-pointer","-MD","-MT","dependencies","-MF","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.d","-c","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/RBLScrollView.m","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.o"]
+    deps: "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.d"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/mousecloak.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloak.swiftmodule"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/mousecloak.swiftmodule.o"]
+    description: "Wrapping AST for mousecloak for debugging"
+    args: ["/usr/share/swift/usr/bin/swiftc","-modulewrap","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloak.swiftmodule","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/mousecloak.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/main.swift"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources"]
+    description: "Write auxiliary file /home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/mousecloak.swiftmodule.o"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.product/Objects.LinkFileList"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/mousecloakHelper.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloakHelper.swiftmodule"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/mousecloakHelper.swiftmodule.o"]
+    description: "Wrapping AST for mousecloakHelper for debugging"
+    args: ["/usr/share/swift/usr/bin/swiftc","-modulewrap","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloakHelper.swiftmodule","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/mousecloakHelper.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/home/runner/work/Mousecape/Mousecape/mousecloakHelper/main.swift"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources"]
+    description: "Write auxiliary file /home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/mousecloakHelper.swiftmodule.o"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.product/Objects.LinkFileList"
+
+  "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/usr/share/swift/usr/bin/swiftc"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+
+  "<BTRKit-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.o"]
+    outputs: ["<BTRKit-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<DTScrollView-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.o"]
+    outputs: ["<DTScrollView-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<GBCli-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o"]
+    outputs: ["<GBCli-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<MASPreferences-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.o"]
+    outputs: ["<MASPreferences-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<MousecapeApp-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCAppDelegate.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSFileManager+DirectoryLocations.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSOrderedSet+AZSortedInsert.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditCapeController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditDetailController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditListController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditWindowController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryViewController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryWindowController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCGeneralPreferencesController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursor.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursorLibrary.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCFormatters.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapeCellView.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapePreviewItem.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCSpriteLayer.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MMAnimatingImageView.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecapeApp.swiftmodule"]
+    outputs: ["<MousecapeApp-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<MousecloakCore-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule"]
+    outputs: ["<MousecloakCore-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<Rebel-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.o"]
+    outputs: ["<Rebel-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<mousecloak-x86_64-unknown-linux-gnu-debug.exe>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak"]
+    outputs: ["<mousecloak-x86_64-unknown-linux-gnu-debug.exe>"]
+
+  "<mousecloak-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloak.swiftmodule"]
+    outputs: ["<mousecloak-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "<mousecloakHelper-x86_64-unknown-linux-gnu-debug.exe>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper"]
+    outputs: ["<mousecloakHelper-x86_64-unknown-linux-gnu-debug.exe>"]
+
+  "<mousecloakHelper-x86_64-unknown-linux-gnu-debug.module>":
+    tool: phony
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloakHelper.swiftmodule"]
+    outputs: ["<mousecloakHelper-x86_64-unknown-linux-gnu-debug.module>"]
+
+  "C.MousecapeApp-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/MCAppDelegate.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSFileManager+DirectoryLocations.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSOrderedSet+AZSortedInsert.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditCapeController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditDetailController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditListController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditWindowController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryViewController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryWindowController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/Preferences/MCGeneralPreferencesController.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursor.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursorLibrary.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/subclasses/MCFormatters.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapeCellView.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapePreviewItem.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCSpriteLayer.swift","/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MMAnimatingImageView.swift","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCAppDelegate.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSFileManager+DirectoryLocations.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSOrderedSet+AZSortedInsert.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditCapeController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditDetailController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditListController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditWindowController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryViewController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryWindowController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCGeneralPreferencesController.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursor.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursorLibrary.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCFormatters.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapeCellView.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapePreviewItem.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCSpriteLayer.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MMAnimatingImageView.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecapeApp.swiftmodule"]
+    description: "Compiling Swift Module 'MousecapeApp' (18 sources)"
+    args: ["/usr/share/swift/usr/bin/swiftc","-module-name","MousecapeApp","-emit-dependencies","-emit-module","-emit-module-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecapeApp.swiftmodule","-output-file-map","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/output-file-map.json","-parse-as-library","-incremental","-c","@/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources","-I","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-Xcc","-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/module.modulemap","-Xcc","-I","-Xcc","/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences","-Xcc","-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/module.modulemap","-Xcc","-I","-Xcc","/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit","-Xcc","-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/module.modulemap","-Xcc","-I","-Xcc","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel","-Xcc","-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/module.modulemap","-Xcc","-I","-Xcc","/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView","-module-cache-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/include/MousecapeApp-Swift.h","-color-diagnostics","-swift-version","5","-import-objc-header","Mousecape/Mousecape-Bridging-Header.h","-g","-Xcc","-fPIC","-Xcc","-g","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.MousecloakCore-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/mousecloak/MCDefs.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/MCPrefs.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/NSBitmapImageRep+ColorSpace.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/apply.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/backup.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/create.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/listen.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/restore.swift","/home/runner/work/Mousecape/Mousecape/mousecloak/scale.swift","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule"]
+    description: "Compiling Swift Module 'MousecloakCore' (9 sources)"
+    args: ["/usr/share/swift/usr/bin/swiftc","-module-name","MousecloakCore","-emit-dependencies","-emit-module","-emit-module-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule","-output-file-map","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/output-file-map.json","-parse-as-library","-incremental","-c","@/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources","-I","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/include/MousecloakCore-Swift.h","-color-diagnostics","-swift-version","5","-import-objc-header","mousecloak/mousecloak-Bridging-Header.h","-g","-Xcc","-fPIC","-Xcc","-g","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.mousecloak-x86_64-unknown-linux-gnu-debug.exe":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/mousecloak.swiftmodule.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.product/Objects.LinkFileList"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak"]
+    description: "Linking ./.build/x86_64-unknown-linux-gnu/debug/mousecloak"
+    args: ["/usr/share/swift/usr/bin/swiftc","-L","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak","-module-name","mousecloak","-emit-executable","-Xlinker","--defsym","-Xlinker","main=mousecloak_main","-Xlinker","-rpath=$ORIGIN","@/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.product/Objects.LinkFileList","-target","x86_64-unknown-linux-gnu","-g"]
+
+  "C.mousecloak-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/main.swift","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloak.swiftmodule"]
+    description: "Compiling Swift Module 'mousecloak' (1 sources)"
+    args: ["/usr/share/swift/usr/bin/swiftc","-module-name","mousecloak","-emit-dependencies","-emit-module","-emit-module-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloak.swiftmodule","-output-file-map","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/output-file-map.json","-incremental","-c","@/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources","-I","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-Xcc","-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/module.modulemap","-Xcc","-I","-Xcc","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli","-module-cache-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","mousecloak_main","-color-diagnostics","-swift-version","5","-import-objc-header","mousecloak/mousecloak-Bridging-Header.h","-g","-Xcc","-fPIC","-Xcc","-g","-Xcc","-fno-omit-frame-pointer"]
+
+  "C.mousecloakHelper-x86_64-unknown-linux-gnu-debug.exe":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/mousecloakHelper.swiftmodule.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.product/Objects.LinkFileList"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper"]
+    description: "Linking ./.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper"
+    args: ["/usr/share/swift/usr/bin/swiftc","-L","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug","-o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper","-module-name","mousecloakHelper","-emit-executable","-Xlinker","--defsym","-Xlinker","main=mousecloakHelper_main","-Xlinker","-rpath=$ORIGIN","@/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.product/Objects.LinkFileList","-target","x86_64-unknown-linux-gnu","-g"]
+
+  "C.mousecloakHelper-x86_64-unknown-linux-gnu-debug.module":
+    tool: shell
+    inputs: ["/home/runner/work/Mousecape/Mousecape/mousecloakHelper/main.swift","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources"]
+    outputs: ["/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/main.swift.o","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloakHelper.swiftmodule"]
+    description: "Compiling Swift Module 'mousecloakHelper' (1 sources)"
+    args: ["/usr/share/swift/usr/bin/swiftc","-module-name","mousecloakHelper","-emit-dependencies","-emit-module","-emit-module-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloakHelper.swiftmodule","-output-file-map","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/output-file-map.json","-incremental","-c","@/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources","-I","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules","-target","x86_64-unknown-linux-gnu","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","mousecloakHelper_main","-color-diagnostics","-swift-version","5","-import-objc-header","mousecloakHelper/mousecloakHelper-Bridging-Header.h","-g","-Xcc","-fPIC","-Xcc","-g","-Xcc","-fno-omit-frame-pointer"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/home/runner/work/Mousecape/Mousecape/Mousecape/","/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit/","/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView/","/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences/","/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel/","/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/","/home/runner/work/Mousecape/Mousecape/mousecloak/","/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli/","/home/runner/work/Mousecape/Mousecape/mousecloakHelper/","/home/runner/work/Mousecape/Mousecape/Package.swift","/home/runner/work/Mousecape/Mousecape/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

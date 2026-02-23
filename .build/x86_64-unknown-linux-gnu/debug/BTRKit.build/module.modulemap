@@ -1,0 +1,4 @@
+module BTRKit {
+    umbrella "/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit"
+    export *
+}

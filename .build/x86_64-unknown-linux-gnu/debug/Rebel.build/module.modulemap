@@ -1,0 +1,4 @@
+module Rebel {
+    umbrella "/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel"
+    export *
+}

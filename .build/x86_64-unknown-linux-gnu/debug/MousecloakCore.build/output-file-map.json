@@ -1,0 +1,68 @@
+{
+  "": {
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/master.swiftdeps"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/MCDefs.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/MCPrefs.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/NSBitmapImageRep+ColorSpace.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/apply.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/backup.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/create.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/listen.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/restore.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.dia"
+  },
+  "/home/runner/work/Mousecape/Mousecape/mousecloak/scale.swift": {
+    "dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.d",
+    "object": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o",
+    "swiftmodule": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale~partial.swiftmodule",
+    "swift-dependencies": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swiftdeps",
+    "diagnostics": "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.dia"
+  }
+}

@@ -1,0 +1,1234 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MousecapeApp-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/share/swift/usr/bin/swiftc",
+      "fileList" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources",
+      "importPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/MCAppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSFileManager+DirectoryLocations.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSOrderedSet+AZSortedInsert.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditCapeController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditDetailController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditListController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/Preferences/MCGeneralPreferencesController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursorLibrary.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/subclasses/MCFormatters.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapeCellView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapePreviewItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCSpriteLayer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MMAnimatingImageView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/MASPreferencesWindowController.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRClipView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/BTRScrollView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/NSColor+RBLCGColorAdditions.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLClipView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/RBLScrollView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/DTScrollView.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MousecapeApp",
+      "moduleOutputPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecapeApp.swiftmodule",
+      "objects" : [
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCAppDelegate.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSFileManager+DirectoryLocations.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSOrderedSet+AZSortedInsert.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditCapeController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditDetailController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditListController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditWindowController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryViewController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryWindowController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCGeneralPreferencesController.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursor.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursorLibrary.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCFormatters.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapeCellView.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapePreviewItem.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCSpriteLayer.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MMAnimatingImageView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-Xcc",
+        "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences",
+        "-Xcc",
+        "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit",
+        "-Xcc",
+        "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel",
+        "-Xcc",
+        "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView",
+        "-module-cache-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/include/MousecapeApp-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-import-objc-header",
+        "Mousecape/Mousecape-Bridging-Header.h",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCAppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSFileManager+DirectoryLocations.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/NSOrderedSet+AZSortedInsert.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditCapeController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditDetailController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditListController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCEditWindowController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCLibraryWindowController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCGeneralPreferencesController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCursorLibrary.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCFormatters.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapeCellView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCCapePreviewItem.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MCSpriteLayer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/MMAnimatingImageView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecapeApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/MCAppDelegate.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSFileManager+DirectoryLocations.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSOrderedSet+AZSortedInsert.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditCapeController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditDetailController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditListController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditWindowController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryViewController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryWindowController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/Preferences/MCGeneralPreferencesController.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursor.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursorLibrary.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/subclasses/MCFormatters.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapeCellView.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapePreviewItem.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCSpriteLayer.swift",
+        "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MMAnimatingImageView.swift"
+      ],
+      "tempsPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MousecloakCore-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/share/swift/usr/bin/swiftc",
+      "fileList" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources",
+      "importPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/MCDefs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/MCPrefs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/NSBitmapImageRep+ColorSpace.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/apply.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/backup.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/create.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/listen.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/restore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/scale.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MousecloakCore",
+      "moduleOutputPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule",
+      "objects" : [
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/include/MousecloakCore-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-import-objc-header",
+        "mousecloak/mousecloak-Bridging-Header.h",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/MCDefs.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/MCPrefs.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/NSBitmapImageRep+ColorSpace.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/apply.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/backup.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/create.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/listen.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/restore.swift",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/scale.swift"
+      ],
+      "tempsPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.mousecloak-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/share/swift/usr/bin/swiftc",
+      "fileList" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources",
+      "importPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "mousecloak",
+      "moduleOutputPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloak.swiftmodule",
+      "objects" : [
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-Xcc",
+        "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli",
+        "-module-cache-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "mousecloak_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-import-objc-header",
+        "mousecloak/mousecloak-Bridging-Header.h",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloak.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/main.swift"
+      ],
+      "tempsPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.mousecloakHelper-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/share/swift/usr/bin/swiftc",
+      "fileList" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources",
+      "importPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloakHelper/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/MousecloakCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "mousecloakHelper",
+      "moduleOutputPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloakHelper.swiftmodule",
+      "objects" : [
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "mousecloakHelper_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-import-objc-header",
+        "mousecloakHelper/mousecloakHelper-Bridging-Header.h",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules/mousecloakHelper.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/home/runner/work/Mousecape/Mousecape/mousecloakHelper/main.swift"
+      ],
+      "tempsPath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MousecapeApp" : [
+      "/usr/share/swift/usr/bin/swiftc",
+      "-module-name",
+      "MousecapeApp",
+      "-c",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/MCAppDelegate.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSFileManager+DirectoryLocations.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSOrderedSet+AZSortedInsert.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditCapeController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditDetailController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditListController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditWindowController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryViewController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryWindowController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/Preferences/MCGeneralPreferencesController.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursor.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursorLibrary.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/subclasses/MCFormatters.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapeCellView.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapePreviewItem.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCSpriteLayer.swift",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MMAnimatingImageView.swift",
+      "-I",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-Xcc",
+      "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MASPreferences.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/external/MASPreferences",
+      "-Xcc",
+      "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/BTRKit.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/external/BTRKit",
+      "-Xcc",
+      "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Rebel.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/external/Rebel",
+      "-Xcc",
+      "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/DTScrollView.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView",
+      "-module-cache-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/include/MousecapeApp-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-import-objc-header",
+      "Mousecape/Mousecape-Bridging-Header.h",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/share/swift/usr/bin/swiftc"
+    ],
+    "MousecloakCore" : [
+      "/usr/share/swift/usr/bin/swiftc",
+      "-module-name",
+      "MousecloakCore",
+      "-c",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/MCDefs.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/MCPrefs.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/NSBitmapImageRep+ColorSpace.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/apply.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/backup.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/create.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/listen.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/restore.swift",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/scale.swift",
+      "-I",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/include/MousecloakCore-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-import-objc-header",
+      "mousecloak/mousecloak-Bridging-Header.h",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/share/swift/usr/bin/swiftc"
+    ],
+    "mousecloak" : [
+      "/usr/share/swift/usr/bin/swiftc",
+      "-module-name",
+      "mousecloak",
+      "-c",
+      "/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/main.swift",
+      "-I",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-Xcc",
+      "-fmodule-map-file=/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/home/runner/work/Mousecape/Mousecape/mousecloak/vendor/GBCli",
+      "-module-cache-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "mousecloak_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-import-objc-header",
+      "mousecloak/mousecloak-Bridging-Header.h",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/share/swift/usr/bin/swiftc"
+    ],
+    "mousecloakHelper" : [
+      "/usr/share/swift/usr/bin/swiftc",
+      "-module-name",
+      "mousecloakHelper",
+      "-c",
+      "/home/runner/work/Mousecape/Mousecape/mousecloakHelper/main.swift",
+      "-I",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "mousecloakHelper_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-import-objc-header",
+      "mousecloakHelper/mousecloakHelper-Bridging-Header.h",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/share/swift/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "BTRKit" : [
+
+    ],
+    "DTScrollView" : [
+
+    ],
+    "GBCli" : [
+
+    ],
+    "MASPreferences" : [
+
+    ],
+    "MousecapeApp" : [
+      "DTScrollView",
+      "Rebel",
+      "BTRKit",
+      "MASPreferences",
+      "MousecloakCore"
+    ],
+    "MousecloakCore" : [
+
+    ],
+    "Rebel" : [
+
+    ],
+    "mousecloak" : [
+      "GBCli",
+      "MousecloakCore"
+    ],
+    "mousecloakHelper" : [
+      "MousecloakCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/MCAppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSFileManager+DirectoryLocations.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/categories/NSOrderedSet+AZSortedInsert.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditCapeController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditDetailController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditListController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCEditWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/MCLibraryWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/controllers/Preferences/MCGeneralPreferencesController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/models/MCCursorLibrary.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/subclasses/MCFormatters.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapeCellView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCCapePreviewItem.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MCSpriteLayer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Mousecape/src/views/MMAnimatingImageView.swift"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecapeApp.build/sources"
+    },
+    "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/MCDefs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/MCPrefs.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/NSBitmapImageRep+ColorSpace.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/apply.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/backup.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/create.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/listen.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/restore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloak/scale.swift"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/sources"
+    },
+    "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/Sources/mousecloak/main.swift"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/sources"
+    },
+    "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBCommandLineParser.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBOptionsHelper.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/GBCli.build/GBSettings.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.build/mousecloak.swiftmodule.o"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloak.product/Objects.LinkFileList"
+    },
+    "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/mousecloakHelper/main.swift"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/sources"
+    },
+    "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCDefs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MCPrefs.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/MousecloakCore.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/NSBitmapImageRep+ColorSpace.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/apply.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/backup.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/create.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/listen.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/restore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/MousecloakCore.build/scale.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.build/mousecloakHelper.swiftmodule.o"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/mousecloakHelper.product/Objects.LinkFileList"
+    },
+    "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/usr/share/swift/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/Mousecape/Mousecape/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+    }
+  }
+}
