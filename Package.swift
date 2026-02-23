@@ -6,58 +6,13 @@ import PackageDescription
 let package = Package(
     name: "Mousecape",
     platforms: [
-        .macOS(.v10_13),
+        .macOS(.v13),
     ],
     products: [
         .executable(name: "mousecloak",       targets: ["mousecloak"]),
         .executable(name: "mousecloakHelper", targets: ["mousecloakHelper"]),
     ],
     targets: [
-
-        // MARK: - ObjC vendor libraries
-
-        /// Command-line argument parsing library used by the mousecloak tool.
-        .target(
-            name: "GBCli",
-            path: "mousecloak/vendor/GBCli",
-            publicHeadersPath: ".",
-            cSettings: [
-                // GBCli requires ARC even though the mousecloak target disables it globally.
-                .unsafeFlags(["-fobjc-arc"]),
-            ]
-        ),
-
-        /// MASPreferences – preferences-window controller used by the Mousecape app.
-        .target(
-            name: "MASPreferences",
-            path: "Mousecape/external/MASPreferences",
-            publicHeadersPath: "."
-        ),
-
-        /// BTRKit – custom clip/scroll view components used by the Mousecape app.
-        .target(
-            name: "BTRKit",
-            path: "Mousecape/external/BTRKit",
-            publicHeadersPath: "."
-        ),
-
-        /// Rebel – additional scroll-view components used by the Mousecape app.
-        /// Some files in this library must be compiled without ARC.
-        .target(
-            name: "Rebel",
-            path: "Mousecape/external/Rebel",
-            publicHeadersPath: ".",
-            cSettings: [
-                .unsafeFlags(["-fno-objc-arc"]),
-            ]
-        ),
-
-        /// DTScrollView – elastic scroll view used by the Mousecape app.
-        .target(
-            name: "DTScrollView",
-            path: "Mousecape/external/DTScrollView",
-            publicHeadersPath: "."
-        ),
 
         // MARK: - Shared core library
 
@@ -88,9 +43,10 @@ let package = Package(
         // MARK: - Executables
 
         /// mousecloak – the command-line cursor-management tool.
+        /// GBCli dependency removed; argument parsing is now done inline in main.swift.
         .executableTarget(
             name: "mousecloak",
-            dependencies: ["MousecloakCore", "GBCli"],
+            dependencies: ["MousecloakCore"],
             path: "Sources/mousecloak",
             swiftSettings: [
                 .unsafeFlags([
@@ -120,20 +76,15 @@ let package = Package(
 
         // MARK: - Mousecape app
 
-        /// MousecapeApp – the macOS GUI application.
+        /// MousecapeApp – the macOS GUI application (SwiftUI).
         ///
-        /// - Note: Producing a full `.app` bundle (with XIBs, entitlements, and embedded
-        ///   frameworks such as Sparkle) requires Xcode. Use the `Mousecape.xcodeproj` for
-        ///   that purpose. This SPM target exposes the Swift source layer for development
-        ///   tooling, indexing, and unit-testing purposes.
+        /// - Note: Producing a full `.app` bundle (with assets and entitlements) requires
+        ///   Xcode. Use the `Mousecape.xcodeproj` for that purpose. This SPM target exposes
+        ///   the Swift source layer for development tooling, indexing, and unit-testing.
         .target(
             name: "MousecapeApp",
             dependencies: [
                 "MousecloakCore",
-                "MASPreferences",
-                "BTRKit",
-                "Rebel",
-                "DTScrollView",
             ],
             path: "Mousecape",
             exclude: [
@@ -146,7 +97,7 @@ let package = Package(
                 "Base.lproj",
                 "en.lproj",
                 "Images.xcassets",
-                // Vendor ObjC libraries handled as separate targets above
+                // Vendor ObjC libraries (kept for Xcode compatibility; not compiled by SPM)
                 "external",
                 // Xcode localisation export artefact
                 "Mousecape",
