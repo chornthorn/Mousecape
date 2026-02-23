@@ -1,0 +1,71 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Release tag (e.g. v2.0.0)'
+        required: true
+
+jobs:
+  build:
+    name: Build unsigned Release DMG
+    runs-on: macos-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build (unsigned Release)
+        run: |
+          xcodebuild \
+            -project Mousecape.xcodeproj \
+            -scheme Mousecape \
+            -configuration Release \
+            -derivedDataPath "$RUNNER_TEMP/build" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Create DMG
+        run: |
+          APP_PATH=$(find "$RUNNER_TEMP/build/Build/Products/Release" \
+            -maxdepth 1 -name "*.app" | head -1)
+          if [ -z "$APP_PATH" ]; then
+            echo "Error: no .app bundle found in build output" >&2
+            exit 1
+          fi
+          APP_NAME=$(basename "$APP_PATH" .app)
+          DMG_PATH="$RUNNER_TEMP/${APP_NAME}.dmg"
+
+          mkdir -p "$RUNNER_TEMP/dmg_staging"
+          cp -R "$APP_PATH" "$RUNNER_TEMP/dmg_staging/"
+
+          hdiutil create \
+            -volname "$APP_NAME" \
+            -srcfolder "$RUNNER_TEMP/dmg_staging" \
+            -ov \
+            -format UDZO \
+            "$DMG_PATH"
+
+          echo "DMG_PATH=$DMG_PATH" >> "$GITHUB_ENV"
+          echo "APP_NAME=$APP_NAME"  >> "$GITHUB_ENV"
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
+          name: ${{ env.APP_NAME }} ${{ github.event.inputs.tag_name || github.ref_name }}
+          draft: false
+          prerelease: false
+          files: ${{ env.DMG_PATH }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
