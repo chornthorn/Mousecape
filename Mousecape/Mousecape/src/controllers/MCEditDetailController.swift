@@ -66,7 +66,9 @@ import AppKit
         let scale = cursorScaleForScale(imageView.scale)
 
         if NSEvent.modifierFlags == .option {
-            cursor.addFrame(MCCursor.composeRepresentation(withFrames: images)!, forScale: scale)
+            if let composed = MCCursor.composeRepresentation(withFrames: images) {
+                cursor.addFrame(composed, forScale: scale)
+            }
         } else {
             cursor.setRepresentation(MCCursor.composeRepresentation(withFrames: images), forScale: scale)
             cursor.frameCount = images.count

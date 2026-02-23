@@ -97,6 +97,9 @@ func cursorScaleForScale(_ scale: CGFloat) -> MCCursorScale {
             let prefix  = isImage ? "cursorImage" : "cursorRep"
             let scaleString = String(key.dropFirst(prefix.count))
             let scaleValue  = CGFloat(Double(scaleString) ?? 0) / 100.0
+
+            if isImage {
+                guard scaleValue > 0 else { return nil }
                 guard let rep = representationForScale(cursorScaleForScale(scaleValue)) else { return nil }
                 let image = NSImage(size: NSSize(width: Double(rep.pixelsWide) / Double(scaleValue),
                                                  height: Double(rep.pixelsHigh) / Double(scaleValue)))
@@ -115,6 +118,7 @@ func cursorScaleForScale(_ scale: CGFloat) -> MCCursorScale {
             let prefix  = isImage ? "cursorImage" : "cursorRep"
             let scaleString = String(key.dropFirst(prefix.count))
             let scaleValue  = CGFloat(Double(scaleString) ?? 0) / 100.0
+            guard scaleValue > 0 else { return }
 
             var rep = value as? NSImageRep
             if isImage, let image = value as? NSImage {
