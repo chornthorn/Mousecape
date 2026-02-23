@@ -74,13 +74,14 @@ let package = Package(
                 "vendor",
                 "CGSInternal",
                 "NSCursor_Private.h",
+                "MousecloakCore-Bridging-Header.h",
                 "mousecloak-Bridging-Header.h",
                 "mousecloak-Prefix.pch",
             ],
             swiftSettings: [
                 .unsafeFlags([
                     "-import-objc-header",
-                    "mousecloak/mousecloak-Bridging-Header.h",
+                    "mousecloak/MousecloakCore-Bridging-Header.h",
                 ]),
             ]
         ),
@@ -146,6 +147,8 @@ let package = Package(
                 "Base.lproj",
                 "en.lproj",
                 "Images.xcassets",
+                // XIB files handled by Xcode, not swift build
+                "src/controllers/Preferences/GeneralPreferences.xib",
                 // Vendor ObjC libraries handled as separate targets above
                 "external",
                 // Xcode localisation export artefact

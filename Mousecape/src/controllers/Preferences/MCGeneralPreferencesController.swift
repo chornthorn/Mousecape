@@ -10,7 +10,7 @@ import AppKit
     // MARK: - cursorScale backed by CGS
 
     @objc var cursorScale: Float {
-        get { return Mousecape.cursorScale() }
+        get { return MousecloakCore.cursorScale() }
         set {
             willChangeValue(forKey: "cursorScale")
             setCursorScale(newValue)

@@ -1,4 +1,0 @@
-module DTScrollView {
-    umbrella header "/home/runner/work/Mousecape/Mousecape/Mousecape/external/DTScrollView/DTScrollView.h"
-    export *
-}

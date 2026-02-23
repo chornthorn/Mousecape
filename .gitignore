@@ -68,3 +68,7 @@ fastlane/test_output
 
 iOSInjectionProject/
 xcshareddata
+
+# Swift Package Manager
+.build/
+*.resolved
