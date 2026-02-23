@@ -1,7 +1,7 @@
 Mousecape
 ===
 
-A free cursor manager for Mac OS 10.8+ built using private, nonintrusive CoreGraphics APIs.
+A free cursor manager for macOS 13+ built using private, nonintrusive CoreGraphics APIs.
 
 ![](https://github.com/alexzielenski/Mousecape/raw/master/screenshot.png)
 
