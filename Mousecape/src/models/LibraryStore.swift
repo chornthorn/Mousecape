@@ -132,7 +132,7 @@ final class LibraryStore: NSObject, ObservableObject {
             "name":       name,
             "version":    1.0,
             "author":     NSLocalizedString("Unknown", comment: "MightyMouse Import Default Author"),
-            "identifier": "local.import.\(name).\(Date().timeIntervalSinceReferenceDate)",
+            "identifier": "local.import.\(name).\(Int(Date().timeIntervalSinceReferenceDate))",
         ]
         guard let dict = NSDictionary(contentsOf: url) as? [String: Any],
               let cape = createCapeFromMightyMouse(dict, metadata: metadata),

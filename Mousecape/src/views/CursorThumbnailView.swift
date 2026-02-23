@@ -91,7 +91,7 @@ struct RepresentationImageView: NSViewRepresentable {
                        shouldPerformDragOperation drop: NSDraggingInfo) -> Bool { return true }
 
         func imageView(_ imageView: MMAnimatingImageView, didAcceptDroppedImages images: [NSImageRep]) {
-            let isOption = NSEvent.modifierFlags == .option
+            let isOption = NSEvent.modifierFlags.contains(.option)
             owner.onImagesDropped?(images, isOption)
         }
 

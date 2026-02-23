@@ -85,11 +85,13 @@ struct MousecapeApp: App {
     // MARK: - Helper tool
 
     private var helperInstalled: Bool {
-        let dict = SMJobCopyDictionary(kSMDomainUserLaunchd,
-                                       "com.alexzielenski.mousecloakhelper" as CFString)
-        let installed = dict != nil
-        if let d = dict { CFRelease(d) }
-        return installed
+        let result = SMJobCopyDictionary(kSMDomainUserLaunchd,
+                                         "com.alexzielenski.mousecloakhelper" as CFString)
+        if let unmanaged = result {
+            _ = unmanaged.takeRetainedValue()   // Balance the Copy retain
+            return true
+        }
+        return false
     }
 
     private func toggleHelperTool() {

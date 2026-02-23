@@ -45,18 +45,10 @@ struct SettingsView: View {
                 HStack {
                     Slider(
                         value: $cursorScaleDisplay,
-                        in: 0.5...16,
-                        step: 1
-                    ) {
-                        EmptyView()
-                    } minimumValueLabel: {
-                        EmptyView()
-                    } maximumValueLabel: {
-                        EmptyView()
-                    }
+                        in: 0.5...16
+                    )
                     .onChange(of: cursorScaleDisplay) { newValue in
-                        cursorScaleDefault = newValue
-                        setCursorScale(Float(newValue))
+                        applyScale(newValue)
                     }
 
                     TextField("", value: $cursorScaleDisplay, format: .number.precision(.fractionLength(2)))
@@ -64,8 +56,8 @@ struct SettingsView: View {
                         .multilineTextAlignment(.trailing)
                         .onChange(of: cursorScaleDisplay) { newValue in
                             let clamped = max(0.5, min(16, newValue))
-                            cursorScaleDefault = clamped
-                            setCursorScale(Float(clamped))
+                            if clamped != newValue { cursorScaleDisplay = clamped }
+                            applyScale(clamped)
                         }
                 }
             }
@@ -76,5 +68,10 @@ struct SettingsView: View {
         .onAppear {
             cursorScaleDisplay = cursorScale()
         }
+    }
+
+    private func applyScale(_ value: Double) {
+        cursorScaleDefault = value
+        setCursorScale(Float(value))
     }
 }

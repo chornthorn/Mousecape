@@ -8,11 +8,12 @@ import AppKit
 
 // MARK: - ANSI colours
 
-private let bold  = "\u{001B}[1m"
-private let reset = "\u{001B}[0m"
-private let white = "\u{001B}[37m"
-private let red   = "\u{001B}[31m"
-private let green = "\u{001B}[32m"
+private let bold      = "\u{001B}[1m"
+private let reset     = "\u{001B}[0m"
+private let white     = "\u{001B}[37m"
+private let red       = "\u{001B}[31m"
+private let green     = "\u{001B}[32m"
+private let copyright = "\(bold)\(white)Copyright © 2013-2024 Alex Zielenski\(reset)"
 
 // MARK: - Argument parser
 
@@ -64,7 +65,7 @@ private func printHelp() {
       --listen            Re-apply the current cape on every user-session change
   -?, --help              Display this help and exit
 
-\(bold)\(white)Copyright © 2013-2024 Alex Zielenski\(reset)
+\(copyright)
 """)
 }
 
@@ -98,12 +99,12 @@ let cmdCount = [doReset, doApply, doCreate, doDump, doConvert, doExport, doScale
 
 if cmdCount > 1 {
     MMLog("\(bold)\(red)One command at a time, son!\(reset)")
-    if !suppressCopyright { print("\(bold)\(white)Copyright © 2013-2024 Alex Zielenski\(reset)") }
+    if !suppressCopyright { print(copyright) }
     exit(0)
 }
 
 func fin() {
-    if !suppressCopyright { print("\(bold)\(white)Copyright © 2013-2024 Alex Zielenski\(reset)") }
+    if !suppressCopyright { print(copyright) }
 }
 
 if doReset {
