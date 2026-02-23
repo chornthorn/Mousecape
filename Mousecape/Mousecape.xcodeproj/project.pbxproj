@@ -376,7 +376,7 @@
 		B576E08C23F84D79BFB8C80E /* apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "apply.swift"; sourceTree = "<group>"; };
 		8552F69061F24013A9BB507D /* create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "create.swift"; sourceTree = "<group>"; };
 		78D911C259F24ED9B32C8B3F /* listen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "listen.swift"; sourceTree = "<group>"; };
-		C62ED0BD262B42C2A6D10F85 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "main.swift"; sourceTree = "<group>"; };
+		C62ED0BD262B42C2A6D10F85 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/mousecloak/main.swift; sourceTree = SOURCE_ROOT; };
 		2E33075CF2024A919830B8A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "main.swift"; sourceTree = "<group>"; };
 		3E698C935E4B4618972827ED /* MCCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCCursor.swift"; sourceTree = "<group>"; };
 		EBA823CFD85E4CCDAFA1D07A /* MCCursorLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCCursorLibrary.swift"; sourceTree = "<group>"; };
